@@ -37,10 +37,23 @@ label {
     background-color: whitesmoke;
 }
 
-input {
+.infoText {
     width: 80%;
 }
 
-searchParameter{
+.searchParameter{
     background-color: grey;
 }
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: grey;
+
+}
+.btn-dark{
+      margin-top: 30px;
+  }
