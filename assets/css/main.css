@@ -4,7 +4,7 @@ body {
 }
 
 .containerfluid {
-    background-color: aliceblue;
+    background-color: white;
     opacity: .05;
     width: 70%;
     overflow: auto;
@@ -13,20 +13,34 @@ body {
     padding: 25px;
 }
 
-    header {
-        text-align: center;
-        border-bottom: grey 1px;
-    }
-    header h1 {
-        margin: 0;
-        padding: 0;
-    }
-    header p {
-        padding: 0;
-        margin-top: 4px;
-        color: black;
-    }
-    section {
-        min-height: 400px;
-    }
-    
+header {
+    text-align: center;
+    border-bottom: grey 1px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    padding: 0;
+    margin-top: 4px;
+    color: black;
+}
+
+section {
+    min-height: 400px;
+}
+
+label {
+    background-color: whitesmoke;
+}
+
+input {
+    width: 80%;
+}
+
+searchParameter{
+    background-color: grey;
+}
