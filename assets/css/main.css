@@ -1,0 +1,32 @@
+body {
+    background-image: url("../images/bg.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerfluid {
+    background-color: aliceblue;
+    opacity: .05;
+    width: 70%;
+    overflow: auto;
+    margin: 20px auto;
+    opacity: 0.8;
+    padding: 25px;
+}
+
+    header {
+        text-align: center;
+        border-bottom: grey 1px;
+    }
+    header h1 {
+        margin: 0;
+        padding: 0;
+    }
+    header p {
+        padding: 0;
+        margin-top: 4px;
+        color: black;
+    }
+    section {
+        min-height: 400px;
+    }
+    
