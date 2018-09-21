@@ -3,7 +3,7 @@
 function apiTest() {
     console.log("Running AJAX!");
     var searchTerm;
-    var beginDate;
+    var beginDate;  
     var endDate;
     var limit;
 
@@ -25,7 +25,7 @@ function apiTest() {
         'q': searchTerm,
         'begin_date': beginDate,
         'end-date': endDate,
-        'page': limit,
+       
     });
 
     $.ajax({
@@ -34,6 +34,15 @@ function apiTest() {
     }).then(function (result) {
         console.log("running test!");
         console.log(result);
+
+       for(var i = 0; i < limit; i++){
+           var newArticle = $('<div class="article">');
+           
+           var a = $(result.response.docs[i].web_url);
+           newArticle.append(a);
+           console.log(a);
+           $('.topArticle').append(newArticle);
+        }
         
     });
 };
