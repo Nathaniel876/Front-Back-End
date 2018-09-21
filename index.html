@@ -11,32 +11,53 @@
 
 <body>
     <div class="containerfluid header">
-        <h1> New York Times Search</h1>
+        <header>
+            <h1> New York Times Search</h1>
+        </header>
     </div>
-<div class="containerfluid">
-<div class="wrapper"></div>
-<div class="row">
-<div class="col-md-12">
-    <form id="search-parameter">
-        <!--search term-->
-        <label for="searchTerm-label">Search Term</label><br>
-        <input type="text" id="gif-input">
-        <label for="gif-input">Search Time</label><br>
-        <input type="text" id="gif-input">
-        <label for="gif-input">Search Time</label><br>
-        <input type="text" id="gif-input">
-        <label for="gif-input">Search Time</label><br>
-        <input type="text" id="gif-input">
-        
-    </form>
-</div>
+    <div class="containerfluid">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="formDiv">
+                        <form id="search-parameter">
+                            <!--search term-->
+                            <label for="searchTerm-label">Search Term</label><br>
+                            <input type="text" id="searchTerm-input"> <br>
+                            <!--number of records-->
+                            <label for="recordNumber-label">Numbers of Records to Retrieve</label><br>
+                            <input type="text" id="recordNumber-input"> <br>
+                            <!--Start Year-->
+                            <label for="startYear-label">Search Term</label><br>
+                            <input type="text" id="startYear-input"> <br>
+                            <!--end Year-->
+                            <label for="endYear-label">Search Term</label><br>
+                            <input type="text" id="endYear-input"> <br>
+                            <!-- search button-->
+                            <input id="input" type="submit" value="Search" class="btn btn-dark">
+                            <!--clear result-->
+                            <input id="clearResult" type="submit" value="Search" class="btn btn-dark">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</div>
-</div>
 
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="assets/javascript/app.js"></script>
+        <!-- article area-->
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--please throw shit to this article Div-->
+                    <div class="articleDiv">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 
 </body>
