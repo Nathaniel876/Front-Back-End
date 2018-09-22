@@ -36,12 +36,13 @@ function apiTest() {
         console.log(result);
 
        for(var i = 0; i < limit; i++){
-           var newArticle = $('<div class="article">');
-           
-           var a = $(result.response.docs[i].web_url);
-           newArticle.append(a);
-           console.log(a);
-           $('.topArticle').append(newArticle);
+           var a = result.response
+           var newArticle = $('<div class="card article">');
+           newArticle.append(a.docs[i].headline.main+'<br>');
+           newArticle.append(a.docs[i].snippet+'<br>');
+           newArticle.append(a.docs[i].web_url);
+           console.log(newArticle);
+           $('.articleDiv').append(newArticle);
         }
         
     });
